@@ -12,13 +12,13 @@
       path: /usr/bin/konfigadm
       mode: u+x
   - git: 
-      repo: https://github.com/saivinay98/dell-repo.git
+      repo: https://github.com/ManideepSripathi/dell-repo.git
       dest: /tmp/task
       update: yes
   - name: Applying Konfigadm
     shell: konfigadm apply --config=/tmp/task/konfigadm.yml
   - git: 
-      repo: https://github.com/saivinay98/kubeadm.git
+      repo: https://github.com/ManideepSripathi/kubeadm.git
       dest: /tmp/task2
       update: yes
   - name: Replacing IP Address
